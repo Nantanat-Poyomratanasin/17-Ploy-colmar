@@ -29,7 +29,7 @@
     <!-- main -->
     <main>
       <!-- hero -->
-      <!-- Classsification each item into 2 classes and use flex-->
+      <!-- Classsification each item into 2 classes and use flex row-->
       <section class="hero">
           <img src="./capstone_colmar_assets/images/banner.jpg" alt="hero-banner" class="hero-img">
           
@@ -46,7 +46,7 @@
 
 
       <!-- information -->
-      <!-- Classsification each item into 2 classes and use flex. flex-information-left is the class that contains
+      <!-- Classsification each item into 2 classes and use flex row which one is the left side and one is the right side. flex-information-left is the class that contains
        image same size with hero-img and the text below. flex-information-right is contains 3 items, each item 
        has image, text and link.-->
       <section class="information">
@@ -64,7 +64,7 @@
         <div class="flex-information-right">
 
             <div class="flex-information-right-item1">
-              <img src="./capstone_colmar_assets/images/information-orientation.jpg" alt="infor-item1-banner" style="width: 35%; height: auto;">
+              <img src="./capstone_colmar_assets/images/information-orientation.jpg" alt="infor-item1-banner" style="width: 35%; height: auto; margin-left: 16px;">
               <nav class="flex-information-right-item1-txt" style="width: 65%;">
                   <h3>Orientation date</h3>
                   <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="flex-information-right-item2">
-              <img src="./capstone_colmar_assets/images/information-campus.jpg" alt="infor-item2-banner" style="width: 35%; height: auto;">
+              <img src="./capstone_colmar_assets/images/information-campus.jpg" alt="infor-item2-banner" style="width: 35%; height: auto; margin-left: 16px;">
               <nav class="flex-information-right-item1-txt" style="width: 65%;">
                   <h3>Our campus</h3>
                   <p>Find which campus is close by you</p>
@@ -82,7 +82,7 @@
             </div>
 
             <div class="flex-information-right-item3">
-              <img src="./capstone_colmar_assets/images/information-guest-lecture.jpg" alt="infor-item3-banner" style="width: 35%; height: auto;">
+              <img src="./capstone_colmar_assets/images/information-guest-lecture.jpg" alt="infor-item3-banner" style="width: 35%; height: auto; margin-left: 16px;">
               <nav class="flex-information-right-item1-txt" style="width: 65%;">
                   <h3>Our guest lecture</h3>
                   <p>Join a keynote with Olive Sack <br>about music in medical treatment</p>
@@ -94,6 +94,8 @@
 
 
       <!-- course -->
+      <!-- There are 3 main classes which are course, course-row1, course-row2. 
+       I made class "polaroid" to create template each items whic contain detail of class and image -->
       <section class="course">
 
           <h1  style="margin: 32px 0px;">Start learning</h1>
@@ -168,46 +170,42 @@
 
 
       <!-- thesis -->
+        <!-- This one is resemble to section information but I changed image into video -->
       <section class="thesis">
 
             <h2>Thesis exhibit</h2>
 
             <div class="thesis-items">
                 <div class="flex-thesis-left">
-                        <img src="./capstone_colmar_assets/images/information-main.jpg" alt="information-banner" class="infor-img">
-                        <h2>It doesn't hurt to keep practicing</h2>
-                        <p style="padding-top: 24px;"></p>
-                        <h5 style="padding-top: 32px;">Lorem ipsum dolor sit amet.</h5>
+                        <video src="./capstone_colmar_assets/videos/thesis.mp4" alt="clip" width="100%" controls></video>
+                        <h2 style="margin-top: 24px; margin-bottom: 8px;">Reimagine urban</h2>
+                        <p style="margin-bottom: 32px;">
+                          “Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec<br>
+                           consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam<br>
+                           eget magna laoreet, efficitur dolor consequat, tristique ligula.”</p>
+                        
                 </div>
 
                 <div class="flex-thesis-right">
 
-                        <div class="flex-information-right-item1">
-                          <img src="./capstone_colmar_assets/images/information-orientation.jpg" alt="infor-item1-banner" style="width: 35%; height: auto;">
-                          <nav class="flex-information-right-item1-txt" style="width: 65%;">
-                              <h3>Orientation date</h3>
-                              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                              <a href="">Read more</a>
+                        <div class="flex-thesis-right-item1">
+                          <img src="./capstone_colmar_assets/images/thesis-fisma.jpg" alt="thesis-item1-banner" style="width: 35%; height: auto; margin-right: 16px;">
+                          <nav class="flex-thesis-right-item1-txt" style="width: 65%; margin-left: 0px;">
+                              <h3>Fisma: Design and<br>
+                              Prototype</h3>
+                              <p>Designer showcase of new<br>
+                              prototype product</p>
+                              
                           </nav>
                         </div>
 
-                        <div class="flex-information-right-item2">
-                          <img src="./capstone_colmar_assets/images/information-campus.jpg" alt="infor-item2-banner" style="width: 35%; height: auto;">
-                          <nav class="flex-information-right-item1-txt" style="width: 65%;">
-                              <h3>Our campus</h3>
-                              <p>Find which campus is close by you</p>
-                              <a href="">Read more</a>
+                        <div class="flex-thesis-right-item2">
+                          <img src="./capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="thesis-item2-banner" style="width: 35%; height: auto; margin-right: 16px;">
+                          <nav class="flex-thesis-right-item1-txt" style="width: 65%;">
+                              <h3>Now and then</h3>
+                              <p>Research study about Ne York</p>
                           </nav>
-                        </div>
-
-                        <div class="flex-information-right-item3">
-                          <img src="./capstone_colmar_assets/images/information-guest-lecture.jpg" alt="infor-item3-banner" style="width: 35%; height: auto;">
-                          <nav class="flex-information-right-item1-txt" style="width: 65%;">
-                              <h3>Our guest lecture</h3>
-                              <p>Join a keynote with Olive Sack <br>about music in medical treatment</p>
-                              <a href="">Read more</a>
-                          </nav>  
-                        </div>
+                        </div>                    
                 </div>
             </div>
       </section>
